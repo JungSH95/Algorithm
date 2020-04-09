@@ -33,3 +33,7 @@ int solution(string arrangement) {
 
 	return answer;
 }
+
+/*
+더 간단한 방법이 없을까?
+*/
