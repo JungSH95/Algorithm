@@ -1,4 +1,4 @@
-# Algorithm
+﻿# Algorithm
 ### 사용언어 C++
 
 ## 프로그래머스
@@ -93,5 +93,6 @@
 * 10870번 - 피보나치 수 5 ([링크](https://www.acmicpc.net/problem/10870))
 * 12100번 - 2048(Easy) ([링크](https://www.acmicpc.net/problem/12100))
 * 14502번 - 연구소 ([링크](https://www.acmicpc.net/problem/14502))
+* 14889번 – 스타트와 링크 ([링크](https://www.acmicpc.net/problem/14889))
 * 15953번 - 상금 헌터 ([링크](https://www.acmicpc.net/problem/15953))
 * 17144번 - 미세먼지 안녕 ([링크](https://www.acmicpc.net/problem/17144))
