@@ -75,6 +75,7 @@
 
 * 1018번 - 체스판 다시 칠하기 ([링크](https://www.acmicpc.net/problem/1018))
 * 1558번 - 요세푸스 ([링크](https://www.acmicpc.net/problem/1558))
+* 1932번 – 정수 삼각형 ([링크](https://www.acmicpc.net/problem/1932))
 * 2096번 - 내려가기 ([링크](https://www.acmicpc.net/problem/2096))
 * 2156번 - 포도주 시식 ([링크](https://www.acmicpc.net/problem/2156))
 * 2309번 - 일곱 난쟁이 ([링크](https://www.acmicpc.net/problem/2309))
