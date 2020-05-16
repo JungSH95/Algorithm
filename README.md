@@ -80,6 +80,7 @@
 * 2156번 - 포도주 시식 ([링크](https://www.acmicpc.net/problem/2156))
 * 2309번 - 일곱 난쟁이 ([링크](https://www.acmicpc.net/problem/2309))
 * 2445번 - 별 찍기 8 ([링크](https://www.acmicpc.net/problem/2445))
+* 2468번 – 안전 영역 ([링크](https://www.acmicpc.net/problem/2468))
 * 2579번 - 계단 오르기 ([링크](https://www.acmicpc.net/problem/2579))
 * 2668번 - 숫자 고르기 ([링크](https://www.acmicpc.net/problem/2668))
 * 2798번 - 블랙잭 ([링크](https://www.acmicpc.net/problem/2798))
