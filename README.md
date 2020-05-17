@@ -91,6 +91,7 @@
 * 4673번 - 셀프 넘버 ([링크](https://www.acmicpc.net/problem/4673))
 * 7576번 - 토마토 ([링크](https://www.acmicpc.net/problem/7576))
 * 9012번 - 괄호 ([링크](https://www.acmicpc.net/problem/9012))
+* 10026번 - 적록색약 ([링크](https://www.acmicpc.net/problem/10026))
 * 10817번 - 세 수 ([링크](https://www.acmicpc.net/problem/10817))
 * 10870번 - 피보나치 수 5 ([링크](https://www.acmicpc.net/problem/10870))
 * 11399번 - ATM ([링크](https://www.acmicpc.net/problem/11399))
