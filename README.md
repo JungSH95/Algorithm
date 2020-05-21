@@ -75,6 +75,7 @@
 
 * 1018번 - 체스판 다시 칠하기 ([링크](https://www.acmicpc.net/problem/1018))
 * 1309번 - 동물원 ([링크](https://www.acmicpc.net/problem/1309))
+* 1520번 – 내리막 길 ([링크](https://www.acmicpc.net/problem/1520))
 * 1558번 - 요세푸스 ([링크](https://www.acmicpc.net/problem/1558))
 * 1932번 – 정수 삼각형 ([링크](https://www.acmicpc.net/problem/1932))
 * 2096번 - 내려가기 ([링크](https://www.acmicpc.net/problem/2096))
