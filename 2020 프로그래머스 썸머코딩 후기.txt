@@ -1,0 +1,135 @@
+썸머코딩 코딩테스트  (10시 ~ 12시)
+
+문제 1
+각 자리수의 중복이 없는 다음 년도를 찾는 문제
+간단~
+
+소스 코드 : 
+using System;
+
+public class Solution {
+    public int[] count_arr = new int[10];
+    
+    public bool check(int num) {
+        for(int i = 0; i < 10; i++)
+            if(count_arr[i] >= 2)
+                return false;
+        return true;
+    }
+    
+    public int solution(int p) {
+        int answer = 0;
+        
+        while(p <= 10000)
+        {
+            p += 1;
+            
+            int temp = p;
+            System.Array.Clear(count_arr, 0, 10);
+            
+            // 각 자리 단위 구하기
+            while(temp / 10 != 0)
+            {
+                count_arr[temp % 10] += 1;
+                temp /= 10;
+            }
+            count_arr[temp % 10] += 1;
+            
+            if(check(p))
+            {
+                answer = p;
+                break;
+            }
+        }
+        
+        return answer;
+    }
+}
+
+
+문제 2
+3의 제곱수를 사용하여 만들 수 있는 숫자들 중에 n 번째의 수를 찾는 문제
+문제 3번에서 시간을 많이 써버려서 해결 방법을 찾다가 시간 초과.
+- n 번째의 수가 2의 제곱수로 사용하여 나타냈을 경우
+  예를 들어 8번째  2의 3제곱 인 수는 3의 3제곱인 27이다.
+  즉 동일한 제곱수를 가지게 된다.
+  n -> 2의 제곱 수로 표현하여 계산, 
+  ex) n: 11이면 2의3승 + 2 + 1 
+	=> 3의 3승과 2번째의 수와 1번째의 수를 더 하면 그 자리의 수가 나온다.
+
+
+문제 3
+풀고나니 간단했던 문제.
+총 스킬 포인트와 해당 스킬의 상위 스킬을 가지고 있는 배열이 주어진다.
+나는 이중리스트를 사용하여 해당 스킬에 필요한 스킬들을 등록했다.
+비어있는 곳은 하위 스킬이 존재하지 않으므로 1을 반환해준다.
+
+하위부터 1로 값들이 배정되어 각 스킬에 필요한 최소 스킬포인트가 부여하면
+그 스킬포인트의 총 합을 주어진 스킬포인트의 총 합과 나누어 그 몫을 각
+스킬 포인트들에 곱해주면 원하는 결과를 얻을 수 있었다.
+
+소스 코드 : 
+using System;
+using System.Collections.Generic;
+
+public class Solution {
+    public List<List<int>> skill_list = new List<List<int>>();
+    
+    public int FindSkillPoint(int skill)
+    {
+        if(skill_list[skill].Count == 0)
+            return 1;
+        else
+        {
+            int point = 0;
+            
+            for(int i = 0; i < skill_list[skill].Count; i++)
+                point += FindSkillPoint(skill_list[skill][i]);
+            
+            return point;
+        }
+    }
+    
+    public int[] solution(int total_sp, int[,] skills) {
+        int row_size = skills.GetLength(0);     // 행의 길이
+        int[] answer = new int[row_size + 1];
+        
+        for(int i = 0; i <= row_size; i++)
+            skill_list.Add(new List<int>());
+        
+        for(int i = 0; i < row_size; i++)
+            skill_list[skills[i, 0] - 1].Add(skills[i, 1] - 1);
+        
+        for(int i = 0; i < skill_list.Count; i++)
+            if(skill_list[i].Count != 0)
+                answer[i] = 0;
+            else
+                answer[i] = 1;
+        
+        for(int i = 0; i < skill_list.Count; i++)
+        {
+            // 하위 스킬 트리 존재
+            if(skill_list[i].Count != 0)
+            {
+                for(int j = 0; j < skill_list[i].Count; j++)
+                    answer[i] += FindSkillPoint(skill_list[i][j]);
+            }
+            else
+                answer[i] = 1;
+        }
+        
+        int total = 0;
+        for(int i = 0; i < answer.Length; i++)
+            total += answer[i];
+        
+        int total_div = total_sp / total;
+        for(int i = 0; i < answer.Length; i++)
+            answer[i] *= total_div;        
+        
+        return answer;
+    }
+}
+
+문제 4
+SQL 문제
+-> 다 까먹었다... ㅠ
