@@ -91,6 +91,7 @@
 * 2884번 - 알람 시계 ([링크](https://www.acmicpc.net/problem/2884))
 * 2941번 - 크로아티아 알파벳 ([링크](https://www.acmicpc.net/problem/2941))
 * 4673번 - 셀프 넘버 ([링크](https://www.acmicpc.net/problem/4673))
+* 7562번 – 나이트의 이동 ([링크](https://www.acmicpc.net/problem/7562))
 * 7576번 - 토마토 ([링크](https://www.acmicpc.net/problem/7576))
 * 9012번 - 괄호 ([링크](https://www.acmicpc.net/problem/9012))
 * 9205번 – 맥주 마시면서 걸어가기 ([링크](https://www.acmicpc.net/problem/9205))
