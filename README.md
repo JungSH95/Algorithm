@@ -73,6 +73,7 @@
 ## 백준
 >https://www.acmicpc.net/
 
+* 1012번 – 유기농 배추 ([링크](https://www.acmicpc.net/problem/1012))
 * 1018번 - 체스판 다시 칠하기 ([링크](https://www.acmicpc.net/problem/1018))
 * 1309번 - 동물원 ([링크](https://www.acmicpc.net/problem/1309))
 * 1520번 – 내리막 길 ([링크](https://www.acmicpc.net/problem/1520))
