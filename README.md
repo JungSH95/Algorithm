@@ -90,6 +90,7 @@
 * 2839번 - 설탕 배달 ([링크](https://www.acmicpc.net/problem/2839))
 * 2869번 - 달팽이는 올라가고 싶다 ([링크](https://www.acmicpc.net/problem/2869))
 * 2884번 - 알람 시계 ([링크](https://www.acmicpc.net/problem/2884))
+* 2960번 – 에라토스테네스의 체 ([링크](https://www.acmicpc.net/problem/2960))
 * 2941번 - 크로아티아 알파벳 ([링크](https://www.acmicpc.net/problem/2941))
 * 4673번 - 셀프 넘버 ([링크](https://www.acmicpc.net/problem/4673))
 * 7562번 – 나이트의 이동 ([링크](https://www.acmicpc.net/problem/7562))
