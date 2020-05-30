@@ -78,6 +78,7 @@
 * 1309번 - 동물원 ([링크](https://www.acmicpc.net/problem/1309))
 * 1520번 – 내리막 길 ([링크](https://www.acmicpc.net/problem/1520))
 * 1558번 - 요세푸스 ([링크](https://www.acmicpc.net/problem/1558))
+* 1660번 – 캡틴 이다솜 ([링크](https://www.acmicpc.net/problem/1660))
 * 1932번 – 정수 삼각형 ([링크](https://www.acmicpc.net/problem/1932))
 * 2096번 - 내려가기 ([링크](https://www.acmicpc.net/problem/2096))
 * 2156번 - 포도주 시식 ([링크](https://www.acmicpc.net/problem/2156))
