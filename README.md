@@ -83,6 +83,7 @@
 * 1932번 – 정수 삼각형 ([링크](https://www.acmicpc.net/problem/1932))
 * 2096번 - 내려가기 ([링크](https://www.acmicpc.net/problem/2096))
 * 2156번 - 포도주 시식 ([링크](https://www.acmicpc.net/problem/2156))
+* 2231번 - 분해합 ([링크](https://www.acmicpc.net/problem/2231))
 * 2309번 - 일곱 난쟁이 ([링크](https://www.acmicpc.net/problem/2309))
 * 2445번 - 별 찍기 8 ([링크](https://www.acmicpc.net/problem/2445))
 * 2468번 – 안전 영역 ([링크](https://www.acmicpc.net/problem/2468))
