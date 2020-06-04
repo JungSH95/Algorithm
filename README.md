@@ -77,6 +77,7 @@
 * 1018번 - 체스판 다시 칠하기 ([링크](https://www.acmicpc.net/problem/1018))
 * 1309번 - 동물원 ([링크](https://www.acmicpc.net/problem/1309))
 * 1316번 – 그룹 단어 체커 ([링크](https://www.acmicpc.net/problem/1316))
+* 1427번 – 소트인사이드 ([링크](https://www.acmicpc.net/problem/1427))
 * 1520번 – 내리막 길 ([링크](https://www.acmicpc.net/problem/1520))
 * 1558번 - 요세푸스 ([링크](https://www.acmicpc.net/problem/1558))
 * 1660번 – 캡틴 이다솜 ([링크](https://www.acmicpc.net/problem/1660))
