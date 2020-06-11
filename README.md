@@ -117,6 +117,7 @@
 * 13305번 - 주유소 ([링크](https://www.acmicpc.net/problem/13305))
 * 14502번 - 연구소 ([링크](https://www.acmicpc.net/problem/14502))
 * 14503번 – 로봇 청소기 ([링크](https://www.acmicpc.net/problem/14503))
+* 14697번 – 방 배정하기 ([링크](https://www.acmicpc.net/problem/14697))
 * 14889번 – 스타트와 링크 ([링크](https://www.acmicpc.net/problem/14889))
 * 14891번 – 톱니바퀴 ([링크](https://www.acmicpc.net/problem/14891))
 * 15686번 – 치킨 배달 ([링크](https://www.acmicpc.net/problem/15686))
