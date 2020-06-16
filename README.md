@@ -105,6 +105,7 @@
 * 7562번 – 나이트의 이동 ([링크](https://www.acmicpc.net/problem/7562))
 * 7576번 - 토마토 ([링크](https://www.acmicpc.net/problem/7576))
 * 9012번 - 괄호 ([링크](https://www.acmicpc.net/problem/9012))
+* 9093번 – 단어 뒤집기 ([링크](https://www.acmicpc.net/problem/9093))
 * 9205번 – 맥주 마시면서 걸어가기 ([링크](https://www.acmicpc.net/problem/9205))
 * 10250번 – ACM 호텔 ([링크](https://www.acmicpc.net/problem/10250))
 * 10026번 - 적록색약 ([링크](https://www.acmicpc.net/problem/10026))
