@@ -109,6 +109,7 @@
 * 9205번 – 맥주 마시면서 걸어가기 ([링크](https://www.acmicpc.net/problem/9205))
 * 10250번 – ACM 호텔 ([링크](https://www.acmicpc.net/problem/10250))
 * 10026번 - 적록색약 ([링크](https://www.acmicpc.net/problem/10026))
+* 10162번 – 전자레인지 ([링크](https://www.acmicpc.net/problem/10162))
 * 10451번 – 순열 사이클 ([링크](https://www.acmicpc.net/problem/10451))
 * 10817번 - 세 수 ([링크](https://www.acmicpc.net/problem/10817))
 * 10870번 - 피보나치 수 5 ([링크](https://www.acmicpc.net/problem/10870))
