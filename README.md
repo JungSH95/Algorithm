@@ -92,6 +92,7 @@
 * 2579번 - 계단 오르기 ([링크](https://www.acmicpc.net/problem/2579))
 * 2606번 - 바이러스 ([링크](https://www.acmicpc.net/problem/2606))
 * 2668번 - 숫자 고르기 ([링크](https://www.acmicpc.net/problem/2668))
+* 2775번 - 부녀회장이 될테야 ([링크](https://www.acmicpc.net/problem/2775))
 * 2798번 - 블랙잭 ([링크](https://www.acmicpc.net/problem/2798))
 * 2839번 - 설탕 배달 ([링크](https://www.acmicpc.net/problem/2839))
 * 2869번 - 달팽이는 올라가고 싶다 ([링크](https://www.acmicpc.net/problem/2869))
