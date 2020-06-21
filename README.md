@@ -115,6 +115,7 @@
 * 10817번 - 세 수 ([링크](https://www.acmicpc.net/problem/10817))
 * 10870번 - 피보나치 수 5 ([링크](https://www.acmicpc.net/problem/10870))
 * 11057번 – 오르막 수 ([링크](https://www.acmicpc.net/problem/11057))
+* 11404번 – 플로이드 ([링크](https://www.acmicpc.net/problem/11404))
 * 11650번 – 좌표 정렬하기 ([링크](https://www.acmicpc.net/problem/11650))
 * 11399번 - ATM ([링크](https://www.acmicpc.net/problem/11399))
 * 11724번 - 연결 요소의 개수 ([링크](https://www.acmicpc.net/problem/11724))
