@@ -75,6 +75,7 @@
 
 * 1012번 – 유기농 배추 ([링크](https://www.acmicpc.net/problem/1012))
 * 1018번 - 체스판 다시 칠하기 ([링크](https://www.acmicpc.net/problem/1018))
+* 1149번 - RGB거리 ([링크](https://www.acmicpc.net/problem/1149))
 * 1309번 - 동물원 ([링크](https://www.acmicpc.net/problem/1309))
 * 1316번 – 그룹 단어 체커 ([링크](https://www.acmicpc.net/problem/1316))
 * 1427번 – 소트인사이드 ([링크](https://www.acmicpc.net/problem/1427))
