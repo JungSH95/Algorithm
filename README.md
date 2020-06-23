@@ -102,6 +102,7 @@
 * 2941번 - 크로아티아 알파벳 ([링크](https://www.acmicpc.net/problem/2941))
 * 3190번 - 뱀 ([링크](https://www.acmicpc.net/problem/3190))
 * 4673번 - 셀프 넘버 ([링크](https://www.acmicpc.net/problem/4673))
+* 4948번 – 베르트랑 공준([링크](https://www.acmicpc.net/problem/4948))
 * 4963번 - 셀프 넘버 ([링크](https://www.acmicpc.net/problem/4963))
 * 5622번 - 다이얼 ([링크](https://www.acmicpc.net/problem/5622))
 * 7562번 – 나이트의 이동 ([링크](https://www.acmicpc.net/problem/7562))
