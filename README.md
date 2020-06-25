@@ -83,6 +83,7 @@
 * 1558번 - 요세푸스 ([링크](https://www.acmicpc.net/problem/1558))
 * 1660번 – 캡틴 이다솜 ([링크](https://www.acmicpc.net/problem/1660))
 * 1932번 – 정수 삼각형 ([링크](https://www.acmicpc.net/problem/1932))
+* 1976번 – 여행 가자 ([링크](https://www.acmicpc.net/problem/1976))
 * 2096번 - 내려가기 ([링크](https://www.acmicpc.net/problem/2096))
 * 2156번 - 포도주 시식 ([링크](https://www.acmicpc.net/problem/2156))
 * 2178번 – 미로 탐색 ([링크](https://www.acmicpc.net/problem/2178))
