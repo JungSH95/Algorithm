@@ -69,6 +69,7 @@
 * 최고의 집합 ([링크](https://programmers.co.kr/learn/courses/30/lessons/12938))
 * 하노이의 탑 ([링크](https://programmers.co.kr/learn/courses/30/lessons/12946))
 * 길 찾기 게임 ([링크](https://programmers.co.kr/learn/courses/30/lessons/42892))
+* 소수 찾기 ([링크](https://programmers.co.kr/learn/courses/30/lessons/42839))
 
 ## 백준
 >https://www.acmicpc.net/
