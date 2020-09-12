@@ -1,0 +1,257 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <queue>
+#include <sstream>
+using namespace std;
+
+int total_Count = 0;
+int action_MinCount = 987654321;
+
+int NextMoveCount(vector<vector<int>> board, int r, int c, int next_r, int next_c, int card)
+{
+	if (r == next_r && c == next_c)
+		return 0;
+
+	// 같은 row
+	if (r == next_r && c != next_c)
+	{
+		int count = 0;
+		// ctrl 눌렀을때 도중에 카드 있는지 체크
+
+		// 왼쪽
+		if (c < next_c)
+		{
+			for (int i = c; i < board[r].size(); i++)
+			{
+				if (board[r][i] == 0)
+					continue;
+
+				if (board[r][i] == card)
+				{
+					count++;
+					break;
+				}
+				else
+					count++;
+			}
+		}
+		// 오른쪽
+		else
+		{
+			for (int i = c; i < board[r].size(); i--)
+			{
+				if (board[r][i] == 0)
+					continue;
+
+				if (board[r][i] == card)
+				{
+					count++;
+					break;
+				}
+				else
+					count++;
+			}
+		}
+
+		return count;
+	}
+	// 같은 col
+	if (r != next_r && c == next_c)
+	{
+		int count = 0;
+
+		// ctrl 눌렀을때 도중에 카드 있는지 체크
+		// 아래
+		if (r < next_r)
+		{
+			for (int i = r; i < board.size(); i++)
+			{
+				if (board[i][c] == 0)
+					continue;
+
+				if (board[i][c] == card)
+				{
+					count++;
+					break;
+				}
+				else
+					count++;
+			}
+		}
+		// 위
+		else
+		{
+			for (int i = r; i < board.size(); i--)
+			{
+				if (board[i][c] == 0)
+					continue;
+
+				if (board[i][c] == card)
+				{
+					count++;
+					break;
+				}
+				else
+					count++;
+			}
+		}
+
+		return count;
+	}
+
+	// 둘다 다를 경우 
+
+	int count = 0;
+	// 1) Row 맞추고
+	// 아래
+	if (r < next_r)
+	{
+		bool other = false;
+		int row_count = 0;
+
+		// 끝에 있는 경우 (중간에 뭐 있는지 체크)
+		if (next_r == board.size() - 1)
+		{
+			bool check = false;
+			for (int i = r; i < board.size(); i++)
+				if (board[i][c] != 0)
+				{
+
+				}
+		}
+
+		for (int i = r; i < board.size(); i++)
+		{
+			if (r == next_r)
+				break;
+			else
+			{
+				// 끝에 있는 경우 || 끝에 없는 경우
+				
+				if (board[i][c] != 0)
+				{
+
+				}
+			}
+		}
+
+		if (other)
+			count += row_count;
+		else
+			count += 1;
+	}
+	// 위
+	else
+	{
+		for (int i = r; i < board.size(); i--)
+			;
+	}
+
+	// 2) Col 맞추기
+
+	return count;
+}
+
+void DFS(vector<vector<int>> board, int r, int c, int card_count, int act, int card_number)
+{
+	// 최소 값보다 행동을 많이 했다면 종료
+	if (action_MinCount <= act)
+		return;
+
+	// 카드를 다 뒤집었다면 확인 후 종료
+	if (total_Count == card_count)
+	{
+		if (action_MinCount > act)
+			action_MinCount = act;
+		return;
+	}
+
+	// 현 위치에 카드가 있는가?
+	if (board[r][c] != 0)
+	{
+		// 현재 카드를 선택한 뒤 다음으로
+		board[r][c] = 0;
+		DFS(board, r, c, card_count + 1, act + 1, board[r][c]);
+	}
+	// 이동을 해야 한다.
+	else
+	{
+		// 카드를 선택 했는지 확인
+		// 카드를 선택 했다면 동일한 카드의 위치 이동 및 해당 카드 제거
+		if (card_number != 0)
+		{
+			int next_r = -1, next_c = -1;
+			int move_count;
+
+			// 이 카드와 동일한 카드의 위치로 이동
+			for (int i = 0; i < board.size(); i++)
+				for (int j = 0; j < board[i].size(); j++)
+					if (board[i][j] == card_number)
+					{
+						move_count = NextMoveCount(board, r, c, next_r, next_c, card_number) + 1;
+						board[i][j] = 0;
+						next_r = i;
+						next_c = j;
+						break;
+					}
+
+			DFS(board, next_r, next_c, card_count + 1, act + move_count, 0);
+		}
+		else
+		{
+			// 현 위치에서 최소로 이동할 수 있는 곳이 있는가?
+		}
+
+	}
+}
+
+int solution(vector<vector<int>> board, int r, int c) {
+	int answer = 0;
+
+	queue<pair<int, int>> q;
+	// 최소 한번에 갈 수 있는 곳들
+	for (int i = 0; i < board.size(); i++)
+	{
+		for (int j = 0; j < board[i].size(); j++)
+		{
+			if (board[i][j] != 0)
+			{
+				total_Count++;
+
+				if (i == r && j == c)
+					q.push(make_pair(i, j));
+				// 같은 row 선에 있는 경우
+				else if (i == r)
+					q.push(make_pair(i, j));
+				// 같은 col 선에 있는 경우
+				else if (j == c)
+					q.push(make_pair(i, j));
+			}
+		}
+	}
+	
+	//cout << q.size() << endl;
+
+	while (!q.empty())
+	{
+		int pos_r = q.front().first;
+		int pos_c = q.front().second;
+		q.pop();
+
+		//DFS(board, pos_r, pos_c, 0, 0, 0);
+	}
+
+	cout << NextMoveCount(board, 1, 0, 2, 3, 2);
+
+	return answer;
+}
+
+
+int main()
+{
+	solution({ { 1, 0, 0, 3 }, { 2, 0, 0, 0 }, { 0, 0, 0, 2 }, { 3, 0, 1, 0 } }, 1, 0);
+
+	return 0;
+}

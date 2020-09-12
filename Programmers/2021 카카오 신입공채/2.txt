@@ -1,0 +1,92 @@
+문제 2
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+using namespace std;
+
+vector<pair<string, int>> course_menu;
+
+// 가능한 코스 만들고
+void makeCourse(string course, int cursor, vector<char> menu)
+{
+	if (course.length() >= 2)
+	{
+		bool eq = false;
+		for (int i = 0; i < course_menu.size(); i++)
+			if (course_menu[i].first == course)
+			{
+				eq = true;
+				course_menu[i].second++;
+				break;
+			}
+
+		if (!eq)
+			course_menu.push_back(make_pair(course, 1));
+	}
+
+	for (int i = cursor; i < menu.size(); i++)
+		makeCourse(course + menu[i], i + 1, menu);
+}
+
+vector<string> solution(vector<string> orders, vector<int> course) {
+	vector<string> answer;
+
+	vector<vector<char>> person_menu;
+
+	for (int i = 0; i < orders.size(); i++)
+	{
+		vector<char> menu;
+		for (int j = 0; j < orders[i].length(); j++)
+			menu.push_back(orders[i][j]);
+		person_menu.push_back(menu);
+	}
+
+	for (int i = 0; i < person_menu.size(); i++)
+	{
+		sort(person_menu[i].begin(), person_menu[i].end());
+
+		for (int j = 0; j < person_menu[i].size(); j++)
+		{
+			string R = "";
+			R += person_menu[i][j];
+			makeCourse(R, j + 1, person_menu[i]);
+		}
+		cout << endl;
+	}
+
+	int course_MaxCount[11] = { 0, };
+	for (int i = 0; i < course_menu.size(); i++)
+		// 2개 이상인 해당 길이의 최대 값 찾기
+		if (course_menu[i].second > 1)
+		{
+			// 주문수가 더 많을 경우
+			if (course_MaxCount[course_menu[i].first.length()] < course_menu[i].second)
+				course_MaxCount[course_menu[i].first.length()] = course_menu[i].second;
+		}
+
+	// 결과 생성
+	for (int i = 0; i < course.size(); i++)
+	{
+		int max = course_MaxCount[course[i]];
+
+		// 코스 넣기
+		for (int j = 0; j < course_menu.size(); j++)
+		{
+			// 길이가 같으면서 주문횟수가 같은 것
+			if (course_menu[j].first.length() == course[i])
+				if (course_menu[j].second == max)
+					answer.push_back(course_menu[j].first);
+		}
+	}
+
+	sort(answer.begin(), answer.end());
+	return answer;
+}
+
+int main()
+{
+	solution({ "XYZ", "XWY", "WXA" }, { 2, 3, 4 });
+
+	return 0;
+}

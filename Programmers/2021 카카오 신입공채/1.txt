@@ -1,0 +1,122 @@
+// 카카오 1번
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+// 1
+string ChangeSmallLetter(string id)
+{
+	for (int i = 0; i < id.length(); i++)
+		if ('A' <= id[i] && id[i] <= 'Z')
+			id[i] += 32;
+
+	return id;
+}
+
+// 2, 3
+string FirstStringChange(string id)
+{
+	string result = "";
+
+	int dotCount = 0;
+
+	for (int i = 0; i < id.length(); i++)
+	{
+		// 2단계 체크 : 소문자, 숫자, -, _, .
+		if (('a' <= id[i] && id[i] <= 'z') ||
+			('0' <= id[i] && id[i] <= '9') ||
+			(id[i] == '-') || (id[i] == '_'))
+		{
+			result += id[i];
+			dotCount = 0;
+		}
+		// 3단계 체크 : 마침표 연속X
+		else if (id[i] == '.')
+		{
+			// 2번 이상 연속 마침표
+			if (dotCount != 0)
+			{
+				dotCount++;
+				continue;
+			}
+			else
+			{
+				result += id[i];
+				dotCount++;
+			}
+		}
+	}
+	return result;
+}
+
+// 4단계 시작과 끝의 마침표 제거
+string deleteStringDot(string id)
+{
+	string result = "";
+	for (int i = 0; i < id.length(); i++)
+	{
+		if ((i == 0 || i == id.length() - 1) && id[i] == '.')
+			continue;
+		else
+			result += id[i];
+	}
+
+	return result;
+}
+
+string LastStringCheck(string id)
+{
+	string result = "";
+	
+	// 5단계
+	if (id.length() == 0)
+	{
+		result += "aaa";
+		return result;
+	}
+
+	// 6단계
+	if (id.length() >= 16)
+	{
+		for (int i = 0; i < 15; i++)
+				result += id[i];
+
+		// 시작과 끝 마침표 제거
+		result = deleteStringDot(result);
+	}
+	// 7단계 (1개 or 2개)
+	else if (id.length() <= 2)
+	{
+		result += id;
+		char c = id[id.length() - 1];
+		while (result.length() < 3)
+			result += c;
+	}
+	else
+		result = id;
+
+	return result;
+}
+
+string solution(string new_id) {
+	string answer = "";
+	
+	answer = ChangeSmallLetter(new_id);		// 1단계
+	cout << answer << endl;
+	answer = FirstStringChange(answer);		// 2,3단계
+	answer = deleteStringDot(answer);		// 4단계
+	answer = LastStringCheck(answer);		// 567단계
+
+	return answer;
+}
+
+int main()
+{
+	//solution("...!@BaT#*..y.abcdefghijklm");
+	solution("123_.def");
+	//solution("=.=");
+	return 0;
+}
+
