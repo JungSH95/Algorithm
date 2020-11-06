@@ -47,6 +47,7 @@
 * 최댓값과 최솟값 ([링크](https://programmers.co.kr/learn/courses/30/lessons/12939))
 * 피보나치 수 ([링크](https://programmers.co.kr/learn/courses/30/lessons/12945))
 * 오픈채팅방 ([링크](https://programmers.co.kr/learn/courses/30/lessons/42888))
+* 삼각 달팽이 ([링크](https://programmers.co.kr/learn/courses/30/lessons/68645))
 
 ### Level 3
 * 2xn 타일링 ([링크](https://programmers.co.kr/learn/courses/30/lessons/12900))
