@@ -19,6 +19,7 @@
 * 완주하지 못한 선수 ([링크](https://programmers.co.kr/learn/courses/30/lessons/42576))
 * 짝수와 홀수 ([링크](https://programmers.co.kr/learn/courses/30/lessons/12937))
 * 평균 구하기 ([링크](https://programmers.co.kr/learn/courses/30/lessons/12944))
+* 신고 결과 받기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/92334))
 
 ### Level 2
 * 주식가격 ([링크](https://programmers.co.kr/learn/courses/30/lessons/42584))
