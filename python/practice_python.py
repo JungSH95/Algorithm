@@ -321,6 +321,7 @@ except ZeroDivisionError as err:
 '''
 
 # 사용자 정의 예외처리
+'''
 class BigNumberError(Exception):
     def __init__(self, msg):
         self.msg = msg
@@ -340,5 +341,120 @@ except BigNumberError as arr:
 # finally는 에러가 발생해도 항상 실행 됨
 finally:
     print("TRY문 끝")
+'''
+    
+# 모듈
+'''
+# "import"로 모듈 사용
+import theater_module as tm
+tm.price(3)
+tm.price_morning(4)
+tm.price_soldier(2)
+'''
+
+'''
+# "from - import"로 사용
+from theater_module import *
+price(3)
+price_morning(4)
+'''
+
+'''
+# "from - import"로 특정 함수만 사용
+from theater_module import price, price_morning
+# price_soldier함수를 price로 별명 생성
+from theater_module import price_soldier as price
+'''
+
+# 패키지
+'''
+import package_test.thailand
+trip_to = package_test.thailand.ThailandPackage()
+trip_to.detail()
+'''
+
+# class 또는 함수를 import해서 사용 불가
+#import package_test.thailand.ThailandPackage (X)
+
+# 하지만 "from ~ import"를 사용한다면 가능
+'''
+from package_test.thailand import ThailandPackage
+trip_to = ThailandPackage()
+trip_to.detail()
+'''
+
+# 패키지를 사용할 때 공개 범위에 따라서 "import *"로 사용 가능한 것이 다름
+# package_test폴더의 __init__.py 참고
+'''
+from package_test import *
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+'''
+
+# 패키지, 모듈 위치 확인
+'''
+import inspect
+import random
+print("RANDOM 위치 : " + inspect.getfile(random))
+'''
+
+# pip3 install (필요한 패키지 설치)
+# 구글 : pypi 검색 (https://pypi.org/)
+# 다른 사람들이 만들어둔 패키지들을 확인할 수 있음
+
+
+# 내장함수
+'''
+# 1. input : 사용자 입력을 받는 함수
+
+# 2. dir : 네임 스페이스에 등록되어 있는 모든 이름들을 리스트로 반환해주는 
+    파이썬의 내장 함수
+#print(dir())
+'''
+# 그 외에 많은 내장 함수들은 아래의 검색어를 통해 사이트에서 확인 가능
+# list of python builtins
+# (link : https://docs.python.org/3/library/functions.html)
+
+
+# 외장함수
+# 구글에서 아래의 검색어를 통해 사이트에서 확인 가능
+# list of python modules
+# (link : https://docs.python.org/3/py-modindex.html)
+
+# 외장함수 : glob
+# -> 경로 내의 폴더 / 파일 목록 조회 (윈도우의 dir)
+'''
+import glob
+print(glob.glob("*.py"))    # 확장자가 py인 모든 파일
+'''
+
+# 외장함수 : os
+# -> 운영체제에서 제공하는 기본 기능
+'''
+import os
+print(os.getcwd())  # 현재 디렉토리
+
+folder = "sample_die"
+if os.path.exists(folder):
+    print("존재하는 폴더")
+else:
+    print("존재하지 않은 폴더")
+'''
+
+# 외장함수 : time, datetime
+# -> 시간 관련 함수
+'''
+import time
+print(time.localtime())
+print(time.strftime("%Y-%m-%d %H:%M:%S"))
+
+import datetime
+print(datetime.date.today())
+
+# timedelta : 두 날짜 사이의 간격
+today = datetime.date.today()       # 오늘 날짜
+td = datetime.timedleta(days=100)   # 100일 저장
+print("TIME : ", today + td)        # 오늘부터 100일 후
+'''
 
 
