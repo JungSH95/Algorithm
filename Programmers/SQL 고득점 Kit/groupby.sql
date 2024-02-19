@@ -46,3 +46,65 @@ ORDER BY MONTH ASC, CAR_ID DESC
 
 -- "8 <= MONTH(START_DATE) <= 10" 이 방식이 안됐던 것임
 -- "8 <= MONTH(START_DATE) AND MONTH(START_DATE) <= 10"로 변경 후 성공함
+
+
+
+-- LEVEL3 : 자동차 대여 기록에서 대여중 / 대여 가능 여부 구분하기
+-- (link : https://school.programmers.co.kr/learn/courses/30/lessons/157340)
+SELECT CAR_ID,
+    CASE 
+        WHEN CAR_ID IN (SELECT CAR_ID
+                        FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+                        WHERE '2022-10-16' BETWEEN START_DATE AND END_DATE) THEN '대여중'
+        ELSE '대여 가능'
+    END  AS 'AVAILABILITY'
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+GROUP BY CAR_ID
+ORDER BY CAR_ID DESC
+-- 특정 조건에 해당 유무에 따라서 대여가능/대여중으로 표기하는 방법인
+-- CASE문을 학습 및 처음 적용해봄
+
+
+
+-- LEVEL3 : 즐겨찾기가 가장 많은 식당 정보 출력하기
+-- (link : https://school.programmers.co.kr/learn/courses/30/lessons/131123)
+
+-- 1트(실패)
+-- 원인 : 스시사카우스(일식	230)가 아닌 하이가쯔네로 검색됨
+SELECT FOOD_TYPE, REST_ID, REST_NAME, MAX(FAVORITES) as 'FAVORITES'
+FROM REST_INFO
+GROUP BY FOOD_TYPE
+ORDER BY FOOD_TYPE DESC
+
+-- 2트(성공)
+SELECT FOOD_TYPE, REST_ID, REST_NAME, FAVORITES
+FROM REST_INFO
+WHERE FAVORITES IN 
+    (SELECT MAX(FAVORITES)
+    FROM REST_INFO
+    GROUP BY FOOD_TYPE)
+GROUP BY FOOD_TYPE
+ORDER BY FOOD_TYPE DESC
+
+
+-- LEVEL3 : 조건에 맞는 사용자와 총 거래금액 조회하기
+-- (link : https://school.programmers.co.kr/learn/courses/30/lessons/164668)
+-- 1트(성공)
+SELECT USER.USER_ID, USER.NICKNAME, SUM(BOARD.PRICE) AS TOTAL_SALES
+FROM USED_GOODS_USER AS USER
+JOIN USED_GOODS_BOARD AS BOARD ON USER.USER_ID = BOARD.WRITER_ID
+WHERE BOARD.STATUS = 'DONE'
+GROUP BY USER.USER_ID
+HAVING SUM(BOARD.PRICE) >= 700000
+ORDER BY TOTAL_SALES ASC
+
+
+-- LEVEL3 : 카테고리 별 도서 판매량 집계하기
+-- (link : https://school.programmers.co.kr/learn/courses/30/lessons/144855)
+SELECT BOOK.CATEGORY, SUM(SALES.SALES) AS TOTAL_SALES
+FROM BOOK AS BOOK
+JOIN BOOK_SALES AS SALES ON BOOK.BOOK_ID = SALES.BOOK_ID
+WHERE DATE_FORMAT(SALES.SALES_DATE, '%Y-%m') = '2022-01'
+GROUP BY BOOK.CATEGORY
+ORDER BY BOOK.CATEGORY ASC
+
