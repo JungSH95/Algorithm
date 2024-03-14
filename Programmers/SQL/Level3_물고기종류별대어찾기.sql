@@ -1,0 +1,21 @@
+물고기 종류 별로 가장 큰 물고기의 ID, 물고기 이름, 길이를 출력하는 SQL 문
+물고기의 ID 컬럼명은 ID, 이름 컬럼명은 FISH_NAME, 길이 컬럼명은 LENGTH로 해주세요.
+결과는 물고기의 ID에 대해 오름차순 정렬해주세요.
+단, 물고기 종류별 가장 큰 물고기는 1마리만 있으며 10cm 이하의 물고기가 가장 큰 경우는 없습니다.
+
+-- 1트(실패)
+-- WHERE 절이 매우 찝찝했음 그냥 MAX값이 포함됐는지 여부는 TYPE을 확인 안하기 때문
+SELECT INFO.ID, NAME_INFO.FISH_NAME, INFO.LENGTH
+FROM FISH_INFO AS INFO
+JOIN FISH_NAME_INFO AS NAME_INFO ON INFO.FISH_TYPE = NAME_INFO.FISH_TYPE
+WHERE INFO.LENGTH IN (SELECT MAX(LENGTH) FROM FISH_INFO GROUP BY FISH_TYPE)
+ORDER BY INFO.ID ASC
+
+-- 2트(성공)
+-- IN을 사용할 때 컬럼이 여러개 가능한지 검색을 통해 가능한 것을 확인함
+-- 해당 방법을 적용 후 성공했음.
+SELECT INFO.ID, NAME_INFO.FISH_NAME, INFO.LENGTH
+FROM FISH_INFO AS INFO
+JOIN FISH_NAME_INFO AS NAME_INFO ON INFO.FISH_TYPE = NAME_INFO.FISH_TYPE
+WHERE (INFO.LENGTH, INFO.FISH_TYPE) IN (SELECT MAX(LENGTH), FISH_TYPE FROM FISH_INFO GROUP BY FISH_TYPE)
+ORDER BY INFO.ID ASC
