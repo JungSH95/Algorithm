@@ -1,0 +1,19 @@
+상반기 동안 각 아이스크림 성분 타입과 성분 타입에 대한 아이스크림의 총주문량
+총주문량이 작은 순서대로 조회하는 SQL 문을 작성
+
+-- MYSQL (1트)
+SELECT info.INGREDIENT_TYPE, SUM(half.TOTAL_ORDER) AS 'TOTAL_ORDER'
+FROM ICECREAM_INFO AS info
+JOIN FIRST_HALF AS half on info.FLAVOR = half.FLAVOR
+GROUP BY info.INGREDIENT_TYPE
+ORDER BY TOTAL_ORDER ASC
+
+
+-- Oracle(2트)
+-- JOIN이 색상표시가 안나오길래 뭔가 싶었음.
+-- Oracle에서는 AS를 사용X
+SELECT info.INGREDIENT_TYPE, SUM(half.TOTAL_ORDER) TOTAL_ORDER
+FROM ICECREAM_INFO info
+JOIN FIRST_HALF half ON info.FLAVOR = half.FLAVOR
+GROUP BY info.INGREDIENT_TYPE
+ORDER BY TOTAL_ORDER ASC
