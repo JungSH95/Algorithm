@@ -8,7 +8,7 @@
 * 유연근무제 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/388351))
 
 ### Level 2
-* 
+* 비밀 코드 해독 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/388352))
 
 ### Level 3
 * 
