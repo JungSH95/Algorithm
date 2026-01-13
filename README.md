@@ -9,6 +9,7 @@
 
 ### Level 2
 * 비밀 코드 해독 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/388352))
+* 지게차와 크레인 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/388353))
 
 ### Level 3
 * 
