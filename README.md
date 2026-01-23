@@ -14,6 +14,7 @@
 * 서버 증설 횟수 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/389479))
 * 완전범죄 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/389480))
 * 연속된 부분 수열의 합 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/178870))
+* 무인도 여행 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/154540))
 
 ### Level 3
 * 
