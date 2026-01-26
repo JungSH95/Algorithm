@@ -16,6 +16,7 @@
 * 연속된 부분 수열의 합 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/178870))
 * 무인도 여행 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/154540))
 * 요격 시스템 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/181188))
+* 리코쳇 로봇 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/169199))
 
 ### Level 3
 * 
