@@ -18,6 +18,7 @@
 * 요격 시스템 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/181188))
 * 리코쳇 로봇 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/169199))
 * 혼자서 하는 틱택토 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/160585))
+* 호텔 대실 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/155651))
 
 ### Level 3
 * 
