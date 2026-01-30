@@ -20,6 +20,7 @@
 * 혼자서 하는 틱택토 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/160585))
 * 호텔 대실 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/155651))
 * 미로 탈출 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/159993))
+* 광물 캐기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/172927))
 
 ### Level 3
 * 
