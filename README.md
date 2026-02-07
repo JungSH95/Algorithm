@@ -29,7 +29,7 @@
 * 마법의 엘리베이터 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/148653))
 
 ### Level 3
-* 
+* 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
 
 ## 백준
 >https://www.acmicpc.net/
