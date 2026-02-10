@@ -28,6 +28,7 @@
 * 이모티콘 할인행사 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150368))
 * 마법의 엘리베이터 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/148653))
 * 귤 고르기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/138476))
+* 연속 부분 수열 합의 개수 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/131701))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
