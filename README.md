@@ -31,6 +31,7 @@
 * 연속 부분 수열 합의 개수 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/131701))
 * 디펜스 게임 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/142085))
 * 양궁대회 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/92342))
+* 택배상자 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/131704))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
