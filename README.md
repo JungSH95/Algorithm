@@ -33,6 +33,7 @@
 * 양궁대회 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/92342))
 * 택배상자 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/131704))
 * 롤케이크 자르기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/132265))
+* 할인 행사 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/131127))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
