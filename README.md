@@ -42,6 +42,7 @@
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
 * 부대복귀 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266))
+* 양과 늑대 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/92343))
 
 ## 백준
 >https://www.acmicpc.net/
