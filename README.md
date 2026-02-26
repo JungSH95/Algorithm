@@ -38,6 +38,7 @@
 * 주차 요금 계산 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/92341))
 * 피로도 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/87946))
 * 전력망을 둘로 나누기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/86971))
+* 숫자 카드 나누기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/135807))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
