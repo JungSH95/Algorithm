@@ -40,6 +40,7 @@
 * 전력망을 둘로 나누기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/86971))
 * 숫자 카드 나누기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/135807))
 * 우박수열 정적분 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/134239))
+* 거리두기 확인하기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/81302))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
