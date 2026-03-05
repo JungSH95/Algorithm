@@ -52,4 +52,4 @@
 ## 백준
 >https://www.acmicpc.net/
 
-* 
+* 바이러스 ([링크](https://www.acmicpc.net/problem/2606))
