@@ -54,3 +54,4 @@
 
 * 바이러스 ([링크](https://www.acmicpc.net/problem/2606))
 * 트리의 독립집합 ([링크](https://www.acmicpc.net/problem/2213))
+* 너의 평점은 ([링크](https://www.acmicpc.net/problem/25206))
