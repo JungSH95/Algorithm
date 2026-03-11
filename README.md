@@ -7,6 +7,7 @@
 ### Level 1
 * 유연근무제 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/388351))
 * 택배 상자 꺼내기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/389478))
+* 중요한 단어를 스포 방지 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/468370))
 
 ### Level 2
 * 비밀 코드 해독 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/388352))
