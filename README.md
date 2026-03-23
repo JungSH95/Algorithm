@@ -10,6 +10,7 @@
 * 중요한 단어를 스포 방지 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/468370))
 * 노란불 신호등 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/468371))
 * 동영상 재생기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/340213))
+* 붕대 감기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/250137))
 
 ### Level 2
 * 비밀 코드 해독 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/388352))
