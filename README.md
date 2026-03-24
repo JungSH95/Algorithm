@@ -65,3 +65,4 @@
 * 너의 평점은 ([링크](https://www.acmicpc.net/problem/25206))
 * 양 한마리 양 두마리 ([링크](https://www.acmicpc.net/problem/11123))
 * 정수 삼각형 ([링크](https://www.acmicpc.net/problem/1932))
+* 제로 ([링크](https://www.acmicpc.net/problem/10773))
