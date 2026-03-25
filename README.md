@@ -67,3 +67,4 @@
 * 정수 삼각형 ([링크](https://www.acmicpc.net/problem/1932))
 * 제로 ([링크](https://www.acmicpc.net/problem/10773))
 * 부녀회장이 될테야 ([링크](https://www.acmicpc.net/problem/2775))
+* 토마토 ([링크](https://www.acmicpc.net/problem/7569))
