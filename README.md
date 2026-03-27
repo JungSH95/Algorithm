@@ -50,6 +50,7 @@
 * 바이러스 파이프 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/468373))
 * 퍼즐 게임 챌린지 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/340212))
 * 충돌위험 찾기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/340211))
+* 석유 시추 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/250136))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
