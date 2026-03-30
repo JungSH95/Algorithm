@@ -51,6 +51,7 @@
 * 퍼즐 게임 챌린지 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/340212))
 * 충돌위험 찾기 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/340211))
 * 석유 시추 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/250136))
+* 혼자 놀기의 달인 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/131130))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
