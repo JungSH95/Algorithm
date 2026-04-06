@@ -73,3 +73,4 @@
 * 부녀회장이 될테야 ([링크](https://www.acmicpc.net/problem/2775))
 * 토마토 ([링크](https://www.acmicpc.net/problem/7569))
 * 사탕 줍는 로봇 ([링크](https://www.acmicpc.net/problem/15892))
+* 소수의 연속합 ([링크](https://www.acmicpc.net/problem/1644))
