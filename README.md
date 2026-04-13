@@ -75,3 +75,4 @@
 * 사탕 줍는 로봇 ([링크](https://www.acmicpc.net/problem/15892))
 * 소수의 연속합 ([링크](https://www.acmicpc.net/problem/1644))
 * 영역 구하기 ([링크](https://www.acmicpc.net/problem/2583))
+* 양치기 꿍 ([링크](https://www.acmicpc.net/problem/3187))
