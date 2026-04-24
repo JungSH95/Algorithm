@@ -54,6 +54,7 @@
 * 혼자 놀기의 달인 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/131130))
 * 2개 이하로 다른 비트 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/77885))
 * 멀쩡한 사각형 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/62048))
+* 게임 맵 최단거리 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/1844))
 
 ### Level 3
 * 미로 탈출 명령어 ([링크](https://school.programmers.co.kr/learn/courses/30/lessons/150365))
